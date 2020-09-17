@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+#sitebranding {
+	background-color:#003;
+	font: Century Gothic;
+}
+h1 {
+	color: white;
+}
+
+#tab {
+	background-color: #999;
+	font: Century Gothic;
+}
+
+#header {
+	overflow: hidden;
+	background-color: #003;
+	font: Century Gothic;
+}
+
+#navigation ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #003;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: #999;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: none;
+	color: white;
+}
+
+#tab a {
+	color: #0F9;
+}
+
+#bodycontent h2 {
+	text-align: center;
+}
+
+#bodycontent p {
+	text-align: center;
+}
+
+#faq h3 {
+	background-color: #CCC;
+}
+
+#question h3 {
+	color: #0F9;
+}
+
+body {
+	font: Century Gothic;
+}
+
+li a href="login.html" {
+	background-color: #0F9;
+}
+
+#footer {
+	background-color: black;
+}
+#footer h3 {
+	color: #FFF;
+}
+
+#footer p{
+	color: #999;
+}
+
+#socialmedia a{
+	color: #999;
+}
+
+#quicklinks a {
+	color: #999;
+}
+
+#footer h4 {
+	color: #FFF;
+}
+
+#Socialmedia a {
+	color: #999;
+}
+
+#copyright p {
+	text-align: center;
+}

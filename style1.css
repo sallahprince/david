@@ -1,0 +1,161 @@
+body{
+    overflow-x: hidden;
+}
+
+}
+
+#tab {
+	background-color: #999;
+	font: Century Gothic;
+}
+
+#header {
+    position: fixed;
+	overflow: hidden;
+	background-color: #0C3866;
+	font: Century Gothic;
+    height: 100px;
+    width: 100%;
+    top: -1px;
+}
+
+#navigation ul {
+    position: relative;
+	list-style-type: none;
+	left: 330px;
+    top: -50px;
+	padding: 0;
+	overflow: hidden;
+}
+#navigation ul button{
+    background: #49C0B6;
+    border-radius: 10px;
+    border: 1px solid #49C0B6;
+    color: white;  
+}
+#navigation ul button:hover{
+    background: #007CC0;
+}
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: none;
+	color: whitesmoke;
+}
+#tab{
+    position: relative;
+  background: #E9ECEF;
+    padding: 1px;
+    top: 90px;
+    z-index: -2;
+}
+#tab a {
+	color: #76CFE4;
+    text-decoration: none;
+}
+#tab p{
+    margin-left: 50px;
+}
+
+#bodycontent h2 {
+	text-align: center;
+    margin-top: 150px;
+    color:#3F3D56;
+    font-size: 34px;
+}
+.ask{
+   border-bottom: 2px solid black;  
+}
+#bodycontent p {
+	text-align: center;
+    font-size: 18px;
+    color: #76758A;
+    padding-bottom: 60px;
+}
+
+#faq{
+   text-align: center;
+    background: whitesmoke;
+}
+#faq h3 {
+	background-color: #CCC;
+}
+
+#question h3 {
+	color: #0F9;
+}
+
+body {
+	font: Century Gothic;
+}
+
+li a href="login.html" {
+	background-color: #0F9;
+}
+
+#footer {
+	background-color: #131313;
+}
+#endingnote{
+ position: relative;
+    top: 60px;
+    left: 80px;
+}
+#footer h3 {
+	color: #FFF;
+}
+
+#footer p{
+	color: #999;
+}
+
+#quicklinks{
+    position: relative;
+    left: 400px;
+    top: -90px;
+}
+#socialmedia a{
+	color: #999;
+}
+
+#quicklinks a {
+	color: #999;
+    text-decoration: none;
+}
+
+#footer h4 {
+	color: #FFF;
+}
+
+#Socialmedia{
+   position: relative;
+    left: 1000px;
+    top: -250px
+}
+
+#Socialmedia a {
+	color: #999;
+}
+
+#copyright{
+    background: black;
+    padding: 10px;
+}
+#copyright p {
+	text-align: center;
+    padding: 10px;
+    margin-left: -350px
+}
+.max{
+    color: #0C3866;
+}

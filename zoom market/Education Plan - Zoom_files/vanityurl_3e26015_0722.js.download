@@ -1,0 +1,261 @@
+$(function () {
+
+    var phones = ['1.888.799.9666', '1.888.799.8854', '1.888.799.0125', '1.888.799.5926', '1.888.799.9666'];
+    dataLayer = [];
+    $.ajax({
+        type: "POST",
+        url: '/market_verify',
+        data: {},
+        async: false,
+        timeout: 5000,
+        dataType: 'json',
+        success: function (response) {
+            var data = response.result;
+
+            if (data.baseUrl) SB.baseUrl = data.baseUrl;
+            //1, if branding header,
+            if (data.__branding && data.__branding_header) {
+                $('#header_container').addClass('branding').removeClass('zoom-newhd').children().removeClass('zoom-newhd');
+                $('#header_outer > #header').remove();
+                $('#header_outer').prepend(data.__branding_header);
+                $('#content_container').removeClass('zoom-newcontent');
+                var html = [];
+                if (data.isLogin) {
+                    html.push('<li class="pic">');
+                    html.push('<a href="/profile" title="View my profile" class="profile-pic hidden-xs">');
+                    if (data.picUrl && data.picUrl != "") {
+                        html.push('<img id="headerPic" src="' + data.picUrl + '" alt="" />');
+                    } else {
+                        html.push('<div id="headerPic" class="user-image"></div>');
+                    }
+                    html.push('</a></li>');
+                    html.push('<div class="visible-xs divider" role="presentation"></div>');
+                    html.push('<li class="signin"><a id="btnLogout" href="javascript:;" class="rr">Sign Out</a></li>');
+                    $('#navbar > ul.navbar-right').append(html.join('')).parent().removeClass('hideme').show();
+                } else {
+                    html.push('<div class="visible-xs divider" role="presentation"></div>');
+                    html.push('<li class="signin"><a class="link" href="/signin">Sign In</a></li>');
+                    html.push('<div class="visible-xs divider" role="presentation"></div>');
+                    html.push('<li><div id="signupfree" class="hidden-xs"><a class="btn btn-primary signupfree" href="/signup" onClick="ga(\'send\', \'event\', \'freesignup\', \'click-nav-signupfree\', \'Header Nav Sign up Free\');">Sign Up Free</a></div></li>');
+                    html.push('<li><a class="visible-xs" href="/signup" onClick="ga(\'send\', \'event\', \'freesignup\', \'click-nav-signupfree\', \'Header Nav Sign up Free\');">Sign Up Free</a></li>');
+                    $('#navbar > ul.navbar-right').append(html.join('')).parent().removeClass('hideme').show();
+                }
+            } else {
+                if (data.isLogin) {
+                    var html = [];
+                    $('#signupfree').parent().hide();
+                    $('li.signin').hide();
+                    $('li .sign-link').hide();
+                    if ('/home' == location.pathname) {
+                        html.push('<li class="signin"><a class="link" href="/profile">My Account</a></li>');
+                    } else {
+                        html.push('<li class="pic">');
+                        html.push('<a href="/profile" title="View my profile" class="profile-pic hidden-xs">');
+                        if (data.picUrl && data.picUrl != "") {
+                            html.push('<img id="headerPic" src="' + data.picUrl + '" alt="" />');
+                        } else {
+                            html.push('<div id="headerPic" class="user-image"></div>');
+                        }
+                        html.push('</a></li>');
+                        html.push('<div class="visible-xs divider" role="presentation"></div>');
+                        html.push('<li class="signin"><a id="btnLogout" href="javascript:;" class="rr">SIGN OUT</a></li>');
+                    }
+                    $('ul.navbar-right').append(html.join(''));
+                }
+            }
+
+            // 2, if branding footer
+            if (data.__branding && data.__branding_footer) {
+                $('#footer_container').empty().addClass('branding').append(data.__branding_footer);
+            }
+            if (data.__branding) {
+                $('body').addClass('vanity-site');
+            }
+            //3, if branding css,
+            if (data.__branding && data.__branding_css) {
+                $('head').append('<style>' + data.__branding_css + '</style>');
+                $('body').addClass('branding');
+            }
+            // 4, check login 
+            if (data && data.isLogin) {
+                $('#header_container').addClass('loggedin');
+                SB.loggedIn = true;
+                SB.stype = data.stype;
+                var index = parseInt(data.__phone_level);
+                if (index < 0) index = 0;
+                $('.support-phone').text(phones[index]).prop('href', 'tel:' + phones[index]);
+                SB.sid = data.sid;
+                $('.dropdown-currency').parents('ul').hide();
+                $('.dropdown-currency').parents('ul').prev().hide();
+                $('.homepage').attr("data-login", "true");
+            } else {
+                // switchCcy($.cookie('_zm_currency'));
+                $('.homepage').attr("data-login", "false");
+            }
+
+            //5, check EU country
+            if (data && data.isEUCountry) {
+                $('.gdpr-compliance').show();
+            }
+
+			//6, check country code
+            if (data && data.countrycode) {
+                window.dataLayer = window.dataLayer || [];
+				window.dataLayer.push({
+					'country': data.countrycode
+				});
+            }
+
+            if(data.countrycode == 'ca') {
+                $('.gdpr-compliance').show();
+            }
+            if(data.countrycode == 'kr') {
+                window.countrycode = 'kr';
+            }
+
+            //check AU country
+            if(data.countrycode == 'au') {
+                $(".hardwarePage").attr("data-countrycode", "au");
+            }
+
+            //check JP country
+            // if(data.countrycode == 'jp') {
+                // $.cookie('_zm_currency', "JPY", {expires: 1, path: '/', secure: true});
+                // switchCcy("JPY");
+            // }
+
+            //check paid user
+            if(data.isLogin) {
+                $("body").attr("data-paiduser", data.isPaidUser);
+            }
+
+            //currency targeting
+            if(data.currency) {
+				setCookie("_zm_currency", "", -1);
+                $.cookie('_zm_currency', data.currency, {expires: 1, path: '/', domain: '.zoom.us', secure: true});
+                switchCcy(data.currency);
+            }
+
+            //captcha type
+            if(data.smartcaptch){
+                $('.smartcaptcha').removeAttrs('style');
+                $('.invisiblecaptcha').remove();
+            }else{
+                $('.invisiblecaptcha').removeAttrs('style');
+                $('.smartcaptcha').remove();
+            }
+            // use cn footer
+            if(data.is_cn){
+				updateCNHeader();
+                changeToCnFooter();
+            }
+        }
+    });
+
+    $('#btnLogout').unbind("click").delegate('', 'click', function (e) {
+        if (!SB.loggedIn) {
+            return;
+        }
+        if (SB.stype == 0) {
+            if (SB.token == 'FAKE_TK') {
+                SB.jump('/logout');
+            } else {
+                window.location.href = 'https://www.facebook.com/logout.php?access_token=' + SB.token + '&next=' + SB.baseUrl + SB.contextPath + '/logout';
+            }
+        } else if (SB.stype == 1) {
+            if (SB.token == 'FAKE_TK') {
+                SB.jump('/logout');
+            } else {
+                var iframe = $('<iframe src="https://accounts.google.com/Logout" frameborder="0" width="1" height="1"></iframe>');
+                iframe.load(function () {
+                    SB.jump('/logout');
+                });
+                $(document.body).append(iframe);
+            }
+        } else if (SB.stype == 101) {
+            SB.jump('/saml/logout');
+        } else {
+            SB.jump('/logout');
+        }
+    });
+
+    $('.dropdown-language').delegate('.dropdown-menu a', 'click', function (e) {
+        if (SB.loggedIn) {
+            var userId = SB.sid;
+            var locale = $(this).data('locale');
+            if (userId != "") {
+                SB.post3({
+                    url: '/profile/saveLocale',
+                    data: {userId: userId, locale: locale},
+                    success: function (response) {
+                    }
+                });
+            }
+        }
+    });
+
+    $('.dropdown-currency').delegate('.dropdown-menu a', 'click', function (e) {
+        var self = $(this);
+        if (self.data('currency') != "") {
+			setCookie("_zm_currency", "", -1);
+            $.cookie('_zm_currency', self.data('currency'), {expires: 1, path: '/', domain: '.zoom.us', secure: true});
+            switchCcy(self.data('currency'));
+        }
+    });
+
+	function setCookie(cname, cvalue, exdays) {
+	    var d = new Date();
+	    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	    var expires = "; expires="+ d.toUTCString();
+	    document.cookie = cname + "=" + cvalue + expires + "; path=/; secure=true";
+	}
+
+    function switchCcy(currecny) {
+        var ccyArray = ['USD', 'AUD', 'EUR', 'GBP','JPY', 'CAD'];
+        var ccyIndex = $.inArray(currecny, ccyArray);
+
+        if (ccyIndex > -1) {
+            $('.dropdown-currency > .dropdown-menu> li').removeClass("active");
+            var activeNode = $('.dropdown-currency > .dropdown-menu> li > a[data-currency=' + currecny + ']');
+            $('.dropdown-currency a>span:first').text(activeNode.text());
+            activeNode.parent().addClass('active');
+
+            var ccyNodes = $('body [data-ccy]');
+            for (i = 0; i < ccyNodes.length; ++i) {
+                var ccyValList = ccyNodes[i].getAttribute("data-ccy").split(',');
+                var ccyTxt = ccyNodes[i].textContent;
+                $.each(ccyValList, function (index, item) {
+                    if (ccyTxt.indexOf(item) > -1) {
+                        ccyNodes[i].innerHTML = ccyTxt.replace(item, ccyValList[ccyIndex]);
+                    }
+                });
+            }
+        }
+    }
+    function changeToCnFooter() {
+        var html = [];
+        html.push('<div class="home" style="margin-bottom: 80px;"><div class="cn-zoom-footer"><p class="cn-foot-title"><span class="zoom-logo-white"></span><span class="dong-han"></span></p>');
+        html.push('<p><a href="https://zoom.com.cn/download">免费下载</a><a style="margin-left: 20px;" href="https://support.zoom.us/hc/zh-cn/articles/360039935891" target="_blank">技术支持</a></p>');
+        html.push('<p><a href="http://beian.miit.gov.cn/state/outPortal/loginPortal.action" style="display:inline-block;" target="_blank">沪ICP备19033564号-1</a><a href="https://tsm.miit.gov.cn/dxxzsp/xkz/xkzgl/resource/qiyesearch.jsp?num=B2-20192836&amp;type=xuke" target="_blank" style="display:inline-block;margin: 0 20px;">增值电信业务经营许可证编号 ：B2-20192836</a><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202011649" class="beian" style="display:inline-block;margin-left:20px;" target="_blank">沪公网安备 31011202011649号</a></p>');
+        html.push('<p>版权所有：上海东涵通讯科技有限公司<a href="/zh-cn/terms.html" target="_blank" style="display:inline-block; margin: 0 20px;">服务条款</a><a href="/zh-cn/privacy.html" target="_blank">隐私政策</a></p>');
+        html.push('<p>违法和不良信息举报电话： 021-80365498 <span style="display:inline-block;" class="cn-lang-container"></span></p>');
+        html.push('</div></div>');
+        var $footer = $('#footer_container #footer-new');
+        var $originalLangDom = $('#footer_container .cm-language');
+        var $cnFooterContainer = $('#footer_container .container');
+        if ($footer.length) {
+            $cnFooterContainer.prepend(html.join(''));
+            $('.cn-lang-container').append($originalLangDom.addClass('new-cn-footer'));
+            $footer.remove();
+            $originalLangDom.children().hide();
+            $originalLangDom.children().first().show();
+            $originalLangDom.children().first().next().show();
+        }
+    }
+
+    function updateCNHeader() {
+		$('#header_container #black-topbar ul>li:last>a').text('联系技术支持').attr('href', 'https://support.zoom.us/hc/zh-cn/articles/360039935891');
+		$('#header_container #navbar li>a.top-contactsales').attr('href', '/cncontactsales/cs');
+	}
+
+});

@@ -1,0 +1,867 @@
+<!doctype html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en-US">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# zoomvideocall: http://ogp.me/ns/fb/zoomvideocall#">
+    <title>404 - Zoom</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+    <meta name="google-site-verification" content="8WU-FkemSTzA1EpoynHUDYe2UxPXiMS53FBXk6_qVy4"/>
+    <meta name="google-site-verification" content="J_tzcwoKXfPkhsWbiS7cM6WEn3pjCr_DhMNmhRtd960"/>
+    <meta name="keywords"
+          content="zoom, zoom.us, video conferencing, video conference, online meetings, web meeting, video meeting, cloud meeting, cloud video, group video call, group video chat, screen share, application share, mobility, mobile collaboration, desktop share, video collaboration, group messaging"/>
+    <meta name="description"
+          content="Zoom is the leader in modern enterprise video communications, with an easy, reliable cloud platform for video and audio conferencing, chat, and webinars across mobile, desktop, and room systems. Zoom Rooms is the original software-based conference room solution used around the world in board, conference, huddle, and training rooms, as well as executive offices and classrooms. Founded in 2011, Zoom helps businesses and organizations bring their teams together in a frictionless environment to get more done. Zoom is a private company headquartered in San Jose, CA."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://zoom.us/"/>
+    <meta property="og:title" content="Video Conferencing, Web Conferencing, Webinars, Screen Sharing"/>
+    <meta property="og:description"
+          content="Zoom is the leader in modern enterprise video communications, with an easy, reliable cloud platform for video and audio conferencing, chat, and webinars across mobile, desktop, and room systems. Zoom Rooms is the original software-based conference room solution used around the world in board, conference, huddle, and training rooms, as well as executive offices and classrooms. Founded in 2011, Zoom helps businesses and organizations bring their teams together in a frictionless environment to get more done. Zoom is a private company headquartered in San Jose, CA."/>
+
+    <meta property="og:image" content="/docs/image/thumb.jpg"/>
+    <meta property="og:site_name" content="Zoom Video"/>
+    <meta property="fb:app_id" content="113289095462482"/>
+    <meta property="twitter:account_id" content="522701657"/>
+    <link rel="shortcut icon" href="/zoom.ico"/>
+    <link rel="canonical" href="/about"/>
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/kgjfgplpablkjnlkjmjdecgdpfankdle"/>
+
+    <link type="text/css" rel="stylesheet" href="/docs/css/all.min_d320247_0224.css"/>
+
+    <style>
+
+        .play_video {
+            padding-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #about_content {
+            margin: 0 auto;
+            width: 720px
+        }
+
+        .home-video {
+            text-align: center;
+            margin: 10px 10px;
+        }
+
+        .home-video-link img {
+            border: 8px solid rgb(238, 240, 242);
+        }
+
+        #about_content .desc {
+            margin-bottom: 8px;
+        }
+
+        #about_content .col-md-6 {
+            padding: 0 12px;
+        }
+
+        #support-about .compare-link {
+            margin-top: 16px;
+        }
+
+        #support-about .title {
+            margin: 10px 0 0;
+            text-align: center;
+        }
+
+        .awards-header {
+            text-align: left;
+            font-size: 26px;
+            font-weight: lighter;
+            color: rgb(58, 60, 62);
+            margin: 52px auto 24px;
+            padding-bottom: 10px;
+            border-bottom: solid 1px rgb(208, 210, 212);
+        }
+
+        ul.awards {
+            list-style-type: none;
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        ul.awards li {
+            display: inline-block;
+            margin-right: 20px;
+            padding: 15px 0 60px;
+            width: 100px;
+            vertical-align: top;
+        }
+
+        ul.awards li img {
+            width: 100px;
+            vertical-align: top;
+        }
+
+        ul.awards li .title {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        ul.awards li.ub-top {
+            margin-right: 0;
+        }
+
+        ul.awards li.gartner {
+            /*border-right: solid 1px #ccc;
+            padding-right: 20px;*/
+            width: auto;
+        }
+
+        ul.awards li.gartner img {
+            height: 90px;
+            width: auto;
+        }
+
+        #awards_list {
+            margin-bottom: 40px;
+        }
+
+        #awards_list .item {
+            height: 280px;
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #awards_list .item .photo {
+            margin-bottom: 16px;
+        }
+
+        #awards_list .item .photo img {
+            width: 168px;
+            height: 168px;
+        }
+
+        #awards_list .item .title {
+            width: 168px;
+            font-size: 15px;
+            margin: 0 auto;
+        }
+
+        .bottom {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+
+        .bottom #btn-request2 {
+            height: 48px;
+            min-width: 200px;
+            padding: 0 12px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 48px;
+            border-radius: 12px;
+            background-color: #F26D21;
+            border-color: #F26D21;
+            margin-right: 20px;
+        }
+
+        .container .bottom #btn-request2:hover {
+            background-color: #DA621E;
+            border-color: #DA621E;
+        }
+
+        .container .bottom #btn-request2:active {
+            background-color: #C2571A;
+            border-color: #C2571A;
+        }
+
+        .bottom #btn-contact2 {
+            text-shadow: none;
+            color: #232333;
+            background-color: #fff;
+            border: 1px solid #BABACC;
+            min-width: 190px;
+            height: 48px;
+            min-width: 190px;
+            padding: 0 12px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 48px;
+            border-radius: 12px;
+        }
+
+        .bottom #btn-contact2:hover {
+            background-color: #FFEBDA;
+            border: 1px solid #FFEBDA;
+        }
+
+        .bottom #btn-contact2:active {
+            background-color: #FFD3AC;
+            border: 1px solid #FFD3AC;
+        }
+
+        .awards-gartner {
+            margin-bottom: 40px;
+        }
+
+        .overview {
+            padding-bottom: 15px;
+        }
+
+        .overview > div {
+            display: table-cell;
+        }
+
+        .overview > .gartner-img {
+            width: 208px;
+            padding-right: 30px;
+            vertical-align: middle;
+        }
+
+        .overview > .gartner-desc {
+            font-size: 15px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 32px;
+            text-align: left;
+            color: #2d8cff;
+        }
+
+        .awards-gartner > p {
+            font-size: 11px;
+            font-weight: normal;
+            font-style: italic;
+            font-stretch: normal;
+            text-align: left;
+            color: #999999;
+        }
+
+        @media screen and (max-width: 767px) {
+            #about_content {
+                font-size: 13px;
+                width: auto;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            .bottom #btn-request2 {
+                text-shadow: 1px 1px #d14600;
+                margin: 0 0 20px 0;
+            }
+
+            .bottom #btn-contact2 {
+                text-shadow: none;
+                margin: 0 0 20px 0;
+            }
+
+            .overview > div {
+                display: block;
+                padding-bottom: 15px;
+            }
+        }
+    </style>
+
+</head>
+<body class="   " data-cd=".zoom.us">
+
+
+<!-- Google Tag No Script -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5WKFT9" height="0" width="0"
+            style="display:none;visibility:hidden" title="Google Tag Manager"></iframe>
+</noscript>
+
+<div id="header_container" class="  zoom-newhd">
+    <div id="header_outer" class="container clearfix  zoom-newhd">
+        <div id="header" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div id="black-topbar" class="hidden-xs noanimate">
+                <div class="container">
+
+                    <ul class="list-inline pull-right">
+                        <li><a href="/livedemo"
+                               onClick="ga('send', 'event', 'requestdemo', 'click-nav-requestademo', 'Header Nav Contact Sales');">Request
+                            a Demo</a></li>
+                        <li><a href="tel:1.888.799.9666" class="support-phone"
+                               onClick="ga('send', 'event', 'contact', 'click-homepage-phone-number', 'Click Homepage Phone Number');">1.888.799.9666</a>
+                        </li>
+                        <li class="dropdown" id="resources" aria-haspopup="true">
+                            <a id="btnResouces" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">Resources
+                                <span class="caret"></span></a>
+                            <ul id="resourcesDropdown" class="dropdown-menu">
+                                <li><a href="https://zoom.us/download#client_4meeting" onClick="">Download Zoom
+                                    Client</a></li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="https://support.zoom.us/hc/en-us/articles/206618765-Zoom-Video-Tutorials"
+                                       onClick="">Video Tutorials</a></li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="/livetraining" onClick="">Live Training</a></li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="/events" onClick="">Webinars and Events</a></li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="https://blog.zoom.us/" onClick="">Zoom Blog</a></li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="https://support.zoom.us/hc/en-us/articles/206175806-Top-Questions"
+                                       onClick="">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://support.zoom.us/hc/en-us" target="_blank"
+                               onClick="ga('send', 'event', 'product', 'click-nav-support', 'Header Nav Support');">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="navbar-header ">
+                    <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse"
+                            class="navbar-toggle collapsed" type="button" value="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <ul class="list-inline pull-right visible-xs" style="line-height: 50px;">
+                        <li style="padding-right: 15px;"><a href="/join" target="_blank">JOIN</a></li>
+                        <li style="padding-right: 15px;"><a href="/start/videomeeting" target="_blank">HOST</a></li>
+                    </ul>
+                    <div class="left">
+                        <a class="imglink" href="/">
+                            <img class="logo" src="/docs/image/new/ZoomLogo_112b8a4.png" alt="Zoom Logo"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class='visible-xs divider' role='presentation'></li>
+                        <li class='dropdown mobile-hide' id='solution' aria-haspopup='true'>
+                            <a id='btnSolutions' href='javascript:;' class='dropdown-toggle' data-toggle='dropdown'
+                               aria-expanded='false'>SOLUTIONS <span class='caret'></span></a>
+                            <ul id='solutionsDropdown' class='dropdown-menu first-dropdown'>
+                                <li id="first-col-nav" class='mega-menu-4-of-12 first-col'>
+                                    <h4 class='mega-block-title'>PRODUCTS</h4>
+                                    <div class='textwidget'>
+                                        <a href='/meetings'
+                                           onclick="ga('send', 'event', 'product', 'click-nav-solutions-meetings', 'Header Nav Solutions Meetings and Chat');">
+                                            <h3>Meetings and Chat</h3>
+                                            <p>HD video, audio, collaboration & chat</p>
+                                        </a>
+                                        <a href='/zoomrooms'
+                                           onclick="ga('send', 'event', 'product', 'click-nav-solutions-rooms', 'Header Nav Solutions Rooms and Workspaces');">
+                                            <h3>Rooms and Workspaces</h3>
+                                            <p>Power up your conference rooms with video</p>
+                                        </a>
+                                        <a href='/voice'
+                                           onclick="ga('send', 'event', 'product', 'click-nav-solutions-voice', 'Header Nav Solutions Voice');">
+                                            <h3>Phone System</h3>
+                                            <p>Enterprise cloud phone system</p>
+                                        </a>
+                                        <a href='/webinar'
+                                           onclick="ga('send', 'event', 'product', 'click-nav-solutions-webinar', 'Header Nav Solutions Webinars');">
+                                            <h3>Video Webinars</h3>
+                                            <p>Full-featured, easy-to-use, engaging webinars</p>
+                                        </a>
+                                        <a href='https://marketplace.zoom.us/'
+                                           onclick="ga('send', 'event', 'product', 'click-nav-solutions-appmarketplace', 'Header Nav Solutions App Marketplace');">
+                                            <h3>App Marketplace</h3>
+                                            <p>Integrations and bots to use with Zoom</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li id="second-col-nav" class='mega-menu-4-of-12 second-col'>
+                                    <h4 class='mega-block-title'>INDUSTRIES</h4>
+                                    <div class='textwidget'>
+                                        <a href='/education'
+                                             onclick="ga('send', 'event', 'product', 'click-nav-industries-education', 'Header Nav Industries Education');">
+                                            <h3>Education</h3>
+                                            <p>Expand traditional classrooms in the cloud</p>
+                                        </a>
+                                        <a href='/finance'
+                                           onclick="ga('send', 'event', 'product', 'click-nav-industries-finance', 'Header Nav Industries Finance');">
+                                            <h3>Finance</h3>
+                                            <p>Improve customer experiences & communications</p>
+                                        </a>
+                                        <a href='/government'
+                                           onclick="ga('send', 'event', 'product', 'click-nav-industries-government', 'Header Nav Industries Government');">
+                                            <h3>Government</h3>
+                                            <p>Increase productivity & engagement for all agencies</p>
+                                        </a>
+                                        <a href='/healthcare'
+                                           onclick="ga('send', 'event', 'product', 'click-nav-industries-healthcare', 'Header Nav Industries Healthcare');">
+                                            <h3>Healthcare</h3>
+                                            <p>HIPAA-compliant telehealth technology & workflows</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li id="promo-col-nav" class='mega-menu-4-of-12 third-col nav-promo'>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown mobile-products" id="solution" aria-haspopup="true">
+                            <a id="btnSolutions" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"
+                               aria-expanded="false">PRODUCTS <span class="caret"></span></a>
+                            <ul id="solutionsDropdown" class="dropdown-menu mobile-products-nav" style="">
+                                <li><a href="/meetings"
+                                       onclick="ga('send', 'event', 'product', 'click-nav-solutions-meetings', 'Header Nav Solutions Meetings and Chat');">Meetings
+                                    and Chat</a></li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="/zoomrooms"
+                                       onclick="ga('send', 'event', 'product', 'click-nav-solutions-rooms', 'Header Nav Solutions Rooms and Workspaces');">Rooms
+                                    and Workspaces</a></li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="/voice"
+                                       onclick="ga('send', 'event', 'product', 'click-nav-solutions-voice', 'Header Nav Solutions Voice');">Phone System</a>
+                                </li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="/webinar"
+                                       onclick="ga('send', 'event', 'product', 'click-nav-solutions-webinar', 'Header Nav Solutions Webinars');">Video
+                                    Webinars</a></li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="https://marketplace.zoom.us/"
+                                       onclick="ga('send', 'event', 'product', 'click-nav-solutions-appmarketplace', 'Header Nav Solutions App Marketplace');">App
+                                    Marketplace</a></li>
+                            </ul>
+                        </li>
+                        <li class='visible-xs divider mobile-hide' role='presentation'></li>
+                        <li class="dropdown mobile-industries" id="solution" aria-haspopup="true">
+                            <a id="btnSolutions" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"
+                               aria-expanded="false">INDUSTRIES <span class="caret"></span></a>
+                            <ul id="solutionsDropdown" class="dropdown-menu" style="">
+                                <li><a href="/education"
+                                       onclick="ga('send', 'event', 'product', 'click-nav-industries-education', 'Header Nav Industries Education');">Education</a>
+                                </li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="/finance"
+                                       onclick="ga('send', 'event', 'product', 'click-nav-industries-finance', 'Header Nav Industries Finance');">Finance</a>
+                                </li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="/government"
+                                       onclick="ga('send', 'event', 'product', 'click-nav-industries-government', 'Header Nav Industries Government');">Government</a>
+                                </li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="/healthcare"
+                                       onclick="ga('send', 'event', 'product', 'click-nav-industries-healthcare', 'Header Nav Industries Healthcare');">Healthcare</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li class='visible-xs divider' role='presentation'></li>
+                    <li><a class='top-pricing' style='text-transform : uppercase;' href='/pricing'>Plans &amp;
+                        Pricing</a></li>
+                    <li class='visible-xs divider' role='presentation'></li>
+                    <li><a class='top-contactsales' style='text-transform : uppercase;' href='/contactsales'>Contact
+                        Sales</a></li>
+                    <li class='visible-xs divider' role='presentation'></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="btnJoinMeeting" class="hidden-xs" href="/join" class="joinameeting light"
+                               onClick="ga('send', 'event', 'product', 'click-nav-joinmeeting', 'Header Nav Join a Meeting');">JOIN
+                            A MEETING</a></li>
+                        <li>
+                            <div id="dropdown-hostmeeting" class="dropdown hidden-xs" aria-haspopup="true">
+                                <a id="btnHostMeeting" data-toggle="dropdown" href="javascript:;" class="hostmeeting"
+                                   onClick="ga('send', 'event', 'product', 'click-nav-hostmeeting', 'Header Nav Host a Meeting');">HOST
+                                    A MEETING <span class="caret"></span></a>
+                                <ul id="hostMeetingDropdown" class="dropdown-menu">
+                                    <li><a href="/start/webmeeting">With Video Off</a></li>
+                                    <li><a href="/start/videomeeting">With Video On</a></li>
+                                    <li><a href="/start/sharemeeting">Screen Share Only</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="nav navbar-nav visible-xs">
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="/livedemo"
+                                       onClick="ga('send', 'event', 'requestdemo', 'click-nav-requestademo', 'Header Nav Contact Sales');">Request
+                                    a Demo</a></li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="https://support.zoom.us/hc/en-us/articles/206175806-Top-Questions"
+                                       target="_blank"
+                                       onClick="ga('send', 'event', 'product', 'click-nav-FAQ', 'Header Nav FAQ');">FAQ</a>
+                                </li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="https://support.zoom.us/hc/en-us" target="_blank"
+                                       onClick="ga('send', 'event', 'product', 'click-nav-support', 'Header Nav Support');">Support</a>
+                                </li>
+                                <li class="visible-xs divider" role="presentation"></li>
+                                <li><a href="tel:1.888.799.9666" class="support-phone"
+                                       onClick="ga('send', 'event', 'contact', 'click-homepage-phone-number', 'Click Homepage Phone Number');"><span
+                                        class="mobile-phone"></span>1.888.799.9666</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end isHeaderBranding -->
+
+        <div id="header_login" class="hideme">
+            <ul>
+                <li class="visible-xs divider" role="presentation"></li>
+                <li class="signin"><a class="link" href="/signin"
+                                      onClick="ga('send', 'event', 'product', 'click-nav-signin', 'Header Nav Sign In');">SIGN
+                    IN</a></li>
+                <li class="visible-xs divider" role="presentation"></li>
+                <li>
+                    <div id="signupfree" class="hidden-xs"><a class="btn btn-primary signupfree" role="button"
+                                                              href="/signup"
+                                                              onClick="ga('send', 'event', 'freesignup', 'click-nav-signupfree', 'Header Nav Sign up Free');">SIGN
+                        UP, IT'S FREE</a></div>
+                </li>
+                <li><a class="visible-xs" href="/signup"
+                       onClick="ga('send', 'event', 'freesignup', 'click-nav-signupfree', 'Header Nav Sign up Free');">SIGN
+                    UP, IT'S FREE</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="content_container" class="zoom-newcontent">
+    <div id="content_success_msg" role="alert" aria-live="assertive" class="alert alert-success hideme zoom-newmessage">
+    </div>
+    <div id="content" class="main-content">
+        <div id="notice-slot"></div>
+        <div class="mini-layout" id="global-error">
+            <div class="mini-layout-body">
+                <div class="globalerror clearfix">
+                    <h1>Uh oh!</h1>
+                    <h2>You seem to have lost your way. Let us help you find what you were looking for:</h2>
+                    <div class="term">
+                        <ul class="clearfix">
+                            <li>Check out our <a href="/events">upcoming events</a></li>
+                            <li>See what's happening on the <a href="http://blog.zoom.us/">blog</a></li>
+                            <li>Sign up for a customized <a href="/livedemo">demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            #content_container {
+                min-height: inherit;
+            }
+
+            #global-error {
+                text-align: left;
+                /*width: 50%;
+    float: right;*/
+            }
+
+            .globalerror {
+                height: 626px;
+            }
+
+            .globalerror>h1 {
+                margin: 0;
+                padding: 156px 0 20px 0;
+                font-weight: bold;
+                font-size: 48px;
+                color: #333;
+            }
+
+            .globalerror>h2 {
+                margin: 0;
+                padding-bottom: 6px;
+                font-size: 30px;
+                font-weight: 300;
+                color: #333;
+                line-height: 42px;
+            }
+
+            .globalerror>h3 {
+                margin: 0;
+                padding-bottom: 65px;
+                font-size: 20px;
+                color: #333;
+                line-height: 30px;
+            }
+
+            .globalerror>h4 {
+                margin: 0;
+                padding-bottom: 20px;
+                font-size: 13px;
+                color: #666;
+            }
+
+            .globalerror>.term {
+                padding-bottom: 110px;
+            }
+
+            .globalerror>.term ul {
+                padding-left: 0;
+                list-style: outside none none;
+                display: inline-block;
+                margin-top: 40px;
+            }
+
+            .globalerror>.term ul li {
+                font-size: 20px;
+                line-height: 38px;
+                display: block;
+                padding-right: 16px;
+                color: #333;
+            }
+
+            .globalerror>.term ul li:last-child {
+                border-right: none;
+            }
+
+            @media (max-width: 1400px) {
+                #global-error {
+                    background: #fff url("/docs/image/error404.jpg") 0 center no-repeat;
+                    background-size: 50% auto;
+                    padding-left: 50%;
+                    margin-top: -30px;
+                }
+            }
+
+            @media (min-width: 1401px) and (max-width: 1440px) {
+                .main-content {
+                    margin: 0;
+                }
+            }
+
+            @media (min-width: 1401px) {
+                .main-content {
+                    width: 1380px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                #global-error {
+                    background: #fff url("/docs/image/error404_full.jpg") 0 10px no-repeat;
+                    background-size: 842px auto;
+                    padding-left: 842px;
+                }
+            }
+
+            @media (max-width: 1200px) {
+                #content_container {
+                    background-position: 0 126px;
+                    background-size: 50% auto;
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                #content_container {
+                    background: #fff;
+                    max-height: 554px;
+                }
+
+                #global-error {
+                    float: none;
+                    width: 100%;
+                    padding: 0 52px;
+                    background: none;
+                }
+
+                .globalerror>h1 {
+                    padding: 60px 0 20px 0;
+                }
+            }
+
+            @media screen and (max-width: 460px) {
+                .globalerror>h1 {
+                    font-size: 11vw;
+                }
+
+                .globalerror>h2 {
+                    font-size: 6.5vw;
+                }
+
+                .globalerror>.term ul li {
+                    font-size: 5vw;
+                }
+            }
+        </style>
+    </div>
+</div>
+<div id="video_dialog" role="alertdialog" class="noheaderfooterdialog modaldialog hideme">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <div class="modal-title"></div>
+                <button class="close simplemodal-close" aria-label="close">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-container">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer_container" role="contentinfo">
+    <div class="container ">
+        <div id="footer-new">
+            <div class="footer-body">
+                <div class="ft-nav">
+                    <div class="ft-about">
+                        <div class="h4"><a href="/about">About</a></div>
+                        <ul>
+                            <li><a href="http://blog.zoom.us/">Zoom Blog</a></li>
+                            <li><a href="/customer/all">Customers</a></li>
+                            <li><a href="/team">Our Team</a></li>
+                            <li><a href="/zoomisbetter">Why Zoom</a></li>
+                            <li><a href="/feature">Features</a></li>
+                            <li><a href="/careers">Careers</a></li>
+                            <li><a href="/integrations">Integrations</a></li>
+                            <li><a href="/partners">Partners</a></li>
+                            <li><a href="https://investors.zoom.us/">Investors</a></li>
+                            <li><a href="/press">Press</a></li>
+                            <li><a href="https://zoom.us/media-kit">Media Kit</a></li>
+                            <li><a href="/resources">How to Videos</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-download" style="">
+                        <div class="h4"><a href="/download">Download</a></div>
+                        <ul>
+                            <li><a href="/download#client_4meeting">Meetings Client</a></li>
+                            <li><a href="/download#chrome_ext">Browser Extension</a></li>
+                            <li><a href="/download#outlook_plugin">Outlook Plug-in</a></li>
+                            <li><a href="/download#lync_plugin">Lync Plug-in</a></li>
+                            <li><a href="/download#client_iphone">iPhone/iPad App</a></li>
+                            <li><a href="/download#mobile_app">Android App</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-sales">
+                        <div class="h4"><a href="/contactsales">Sales</a></div>
+                        <ul>
+                            <li><a href="tel:1.888.799.9666" class="support-phone">1.888.799.9666</a></li>
+                            <li><a href="/contactsales">Contact Sales</a></li>
+                            <li><a href="/pricing">Plans & Pricing</a></li>
+                            <li><a href="/livedemo">Request a Demo</a></li>
+                            <li><a href="/events">Webinars and Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-support">
+                        <div class="h4"><a href="http://support.zoom.us" target="_blank">Support</a></div>
+                        <ul>
+                            <li><a href="/test">Test Zoom</a></li>
+                            <li><a href="/account">Account</a></li>
+                            <li><a href="http://support.zoom.us" target="_blank">Support Center</a></li>
+                            <li><a href="/livetraining">Live Training</a></li>
+                            <li><a href="/feed">Feedback</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/accessibility">Accessibility</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="cm-language">
+                        <div class="h4"><span style="color:#eaeaea;">Language</span></div>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="dropdown-language dropdown" role="presentation">
+                                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"
+                                       data-hover="dropdown" data-close-others="true" aria-haspopup="true">
+                                        <span>English</span>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li class="active"><a href="javascript:;" data-locale="en-US">English</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="info-icons">
+                            <a href="http://blog.zoom.us/" class="icon" target="_blank"><span class="wordpress"
+                                                                                              aria-label="Blog"
+                                                                                              role="img"></span></a>
+                            <a href="http://www.linkedin.com/company/2532259" class="icon" target="_blank"><span
+                                    class="linkedin" aria-label="LinkedIn" role="img"></span></a>
+                            <a href="http://www.twitter.com/zoom_us" class="icon" target="_blank"><span class="twitter"
+                                                                                                        aria-label="Twitter"
+                                                                                                        role="img"></span></a>
+                            <a href="http://www.youtube.com/zoommeetings" class="icon" target="_blank"><span
+                                    class="youtube-play" aria-label="Youtube" role="img"></span></a>
+                            <a href="http://www.facebook.com/zoomvideocommunications" class="icon" target="_blank"><span
+                                    class="facebook" aria-label="Facebook" role="img"></span></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="footer-copyright">
+
+                    <div class="info">Copyright &copy;2020 Zoom Video Communications, Inc. All rights reserved. <a
+                            href="/legal">Privacy & Legal Policies</a><a href="/privacy#about-ads">About Ads</a><a
+                            id="teconsent" style="display: none;"></a></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="consent_blackbar" style="position:fixed; bottom: 0;width: 100%;z-index: 1000;"></div>
+    </div>
+</div>
+
+<div id="fb-root"></div>
+<input type="hidden" id="__platformCheck" value=""/>
+
+<script type="text/javascript">
+    var SB = {
+        version: '4.0.90287.0818.e545f4e7',
+        contextPath: '',
+        baseUrl: 'https://zoom.us',
+        baseStaticUrl: 'https://zoom.us/static',
+        loggedIn: false,
+        fbLoggedIn: false,
+        fbAppkey: '113289095462482',
+        fbAppPage: 'https://apps.facebook.com/zoomvideocall/',
+        fbScope: 'email,public_profile,user_friends',
+        pardotPaymentUrl: 'https://go.pardot.com/l/106442/2016-01-18/6y6nv',
+        pardotBuyUrl: 'https://go.pardot.com/l/106442/2016-01-18/6y6nx',
+        pardotSubscriptionUrl: 'https://go.pardot.com/l/106442/2016-01-18/6y6nz',
+        pardotActivateUserUrl: 'https://go.pardot.com/l/106442/2015-11-05/36htl'
+    };
+</script>
+
+<script type="text/javascript" src="/docs/js/all.min_dedc586_0403.js"></script>
+<script type="text/javascript" src="/docs/js/vanityurl_3e26015_0217.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="/docs/js/app/jquery.validate.message.min_60a0bc5.js"></script>
+
+<!-- Act-On-->
+<!--[if gt IE 8]><!-->
+<script>
+    setTimeout(function () {
+        /*<![CDATA[*/
+        window.zEmbed || function (e, t) {
+            var n, o, d, i, s, a = [], r = document.createElement("iframe");
+            window.zEmbed = function () {
+                a.push(arguments)
+            }, window.zE = window.zE || window.zEmbed, r.src = "javascript:false", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "display: none", d = document.getElementsByTagName("script"), d = d[d.length - 1], d.parentNode.insertBefore(r, d), i = r.contentWindow, s = i.document;
+            try {
+                o = s
+            } catch (c) {
+                n = document.domain, r.src = 'javascript:var d=document.open();d.domain="' + n + '";void(0);', o = s
+            }
+            o.open()._l = function () {
+                var o = this.createElement("script");
+                n && (this.domain = n), o.id = "js-iframe-async", o.src = e, this.t = +new Date, this.zendeskHost = t, this.zEQueue = a, this.body.appendChild(o)
+            }, o.write('<body onload="document._l();">'), o.close()
+        }("https://assets.zendesk.com/embeddable_framework/main.js", "zoomus.zendesk.com");
+        /*]]>*/
+
+    }, 3000);
+</script>
+<!--<![endif]-->
+
+</body>
+</html>
